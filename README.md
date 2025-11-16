@@ -1,4 +1,4 @@
-** Sistema de Gestión de Inventario en C++ **
+* Sistema de Gestión de Inventario en C++ *
 
 Este es un proyecto de consola desarrollado en C++ con el objetivo de practicar conceptos fundamentales de programación y lógica. El programa simula un sistema básico de inventario donde se pueden registrar, buscar, modificar y ordenar productos.
 
