@@ -24,29 +24,3 @@ El programa presenta un menú interactivo con las siguientes opciones:
 5.  **Ordenar por Precio:** Ordena y muestra la lista completa de productos del más barato al más caro.
 6.  **Ordenar por Cantidad:** Ordena y muestra la lista completa de productos del que tiene menor stock al que tiene mayor stock.
 7.  **Salir:** Termina la ejecución del programa.
-
-## 🛠️ Cómo Compilar y Ejecutar
-
-Este proyecto está escrito en C++ estándar y puede ser compilado con `g++` (MinGW).
-
-1.  **Clonar el repositorio (o descargar el archivo `inventario.cpp`):**
-    ```bash
-    git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
-    cd TU_REPOSITORIO
-    ```
-
-2.  **Compilar el programa:**
-    Abre una terminal (como GitBash) en la carpeta del proyecto y ejecuta el siguiente comando:
-    ```bash
-    g++ inventario.cpp -o inventario.exe
-    ```
-    *Esto creará un archivo ejecutable llamado `inventario.exe`.*
-
-3.  **Ejecutar el programa:**
-    ```bash
-    ./inventario.exe
-    ```
-
-## 💻 Ejemplo de Interfaz
-
-Al ejecutar el programa, se desplegará el siguiente menú:
