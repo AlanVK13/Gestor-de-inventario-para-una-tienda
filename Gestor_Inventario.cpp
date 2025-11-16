@@ -191,16 +191,16 @@ void esperarEnter() {
  * Añade 10 productos de ejemplo a nuestro vector 'inventario'.
  */
 void inicializarInventario() {
-    inventario.push_back({101, "Leche", 25.50, 150});
-    inventario.push_back({102, "Pan", 5.00, 300});
-    inventario.push_back({103, "Huevos (docena)", 40.00, 100});
-    inventario.push_back({104, "Jamon (kg)", 120.75, 50});
-    inventario.push_back({105, "Queso (kg)", 99.90, 60});
-    inventario.push_back({106, "Manzanas (kg)", 45.20, 80});
-    inventario.push_back({107, "Refresco (2L)", 32.00, 120});
-    inventario.push_back({108, "Arroz (kg)", 22.00, 200});
-    inventario.push_back({109, "Frijol (kg)", 28.50, 180});
-    inventario.push_back({110, "Aceite (1L)", 55.00, 90});
+    inventario.push_back({101, "Proteina", 350.15, 100});
+    inventario.push_back({102, "Creatina", 250.00, 25});
+    inventario.push_back({103, "L-Carnitina", 110.50, 30});
+    inventario.push_back({104, "EAAs", 120.75, 50});
+    inventario.push_back({105, "BCAAs", 99.90, 60});
+    inventario.push_back({106, "Omega 9", 45.20, 80});
+    inventario.push_back({107, "Oxandrolona", 1100.00, 120});
+    inventario.push_back({108, "Primobolan", 2500.00, 22});
+    inventario.push_back({109, "Trembolona", 4500.50, 18});
+    inventario.push_back({110, "Agua", 25.00, 90});
 }
 
 /**
@@ -335,3 +335,4 @@ void ordenarPorCantidad() {
         }
     }
 }
+//Codigo corregido y funcional
