@@ -24,3 +24,66 @@ El programa presenta un menú interactivo con las siguientes opciones:
 5.  **Ordenar por Precio:** Ordena y muestra la lista completa de productos del más barato al más caro.
 6.  **Ordenar por Cantidad:** Ordena y muestra la lista completa de productos del que tiene menor stock al que tiene mayor stock.
 7.  **Salir:** Termina la ejecución del programa.
+
+## 💻 Ejemplo de Interfaz
+
+Aquí hay un ejemplo de una sesión de uso que muestra varias funcionalidades:
+
+```bash
+--- SISTEMA DE GESTION DE INVENTARIO ---
+1. Mostrar Inventario Completo
+2. Buscar Producto por ID
+...
+0. Salir
+------------------------------------------
+Seleccione una opcion: 2
+
+# El usuario busca un producto por ID
+Ingrese el ID del producto a buscar: 103
+
+--- Resultado de la Busqueda ---
+ | 103   | Huevos (docena)      | $40.00      | 100      |
+
+Presione Enter para continuar...
+
+--- SISTEMA DE GESTION DE INVENTARIO ---
+...
+0. Salir
+------------------------------------------
+Seleccione una opcion: 2
+
+# El usuario busca un ID que no existe (Manejo de Excepciones)
+Ingrese el ID del producto a buscar: 999
+
+--- Resultado de la Busqueda ---
+Error: Producto no encontrado con ese ID.
+
+Presione Enter para continuar...
+
+--- SISTEMA DE GESTION DE INVENTARIO ---
+...
+0. Salir
+------------------------------------------
+Seleccione una opcion: 5
+
+# El usuario ordena los productos por precio
+Ordenando por Precio...
+ ----------------------------------------------------------------
+ | ID    | Nombre               | Precio     | Cantidad |
+ ----------------------------------------------------------------
+ | 102   | Pan                  | $5.00       | 300      |
+ | 108   | Arroz (kg)           | $22.00      | 200      |
+ | 101   | Leche                | $25.50      | 150      |
+ ... (resto de la lista) ...
+ ----------------------------------------------------------------
+Inventario ordenado por precio.
+
+Presione Enter para continuar...
+
+--- SISTEMA DE GESTION DE INVENTARIO ---
+...
+0. Salir
+------------------------------------------
+Seleccione una opcion: 0
+
+Saliendo del sistema...
