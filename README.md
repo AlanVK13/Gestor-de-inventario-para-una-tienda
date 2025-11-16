@@ -1,37 +1,52 @@
-* Sistema de Gestión de Inventario en C++ *
+# Sistema de Gestión de Inventario en C++
 
-Este es un proyecto de consola desarrollado en C++ con el objetivo de practicar conceptos fundamentales de programación y lógica. El programa simula un sistema básico de inventario donde se pueden registrar, buscar, modificar y ordenar productos.
+Este es un proyecto de consola desarrollado en C++ que simula un sistema básico de inventario. El objetivo principal fue poner en práctica y reforzar conceptos fundamentales del lenguaje, como el manejo de memoria, estructuras de datos y algoritmos de ordenamiento.
 
-🚀 Conceptos Practicados
+## 🚀 Conceptos Practicados
 
-El objetivo principal de este proyecto fue aplicar y reforzar los siguientes elementos del lenguaje C++:
+Este proyecto fue un ejercicio para aplicar los siguientes pilares de C++:
 
-Estructuras (struct): Para definir un tipo de dato personalizado Producto que agrupa ID, nombre, precio y cantidad.
+* **Estructuras (`struct`):** Se utilizó para crear un tipo de dato personalizado `Producto`, agrupando sus propiedades (ID, nombre, precio, cantidad).
+* **Arreglos (usando `std::vector`):** Se usó `std::vector` como un arreglo dinámico moderno para almacenar la colección de todos los productos en el inventario.
+* **Funciones:** El código está modularizado en funciones, cada una con una responsabilidad única (mostrar, buscar, ordenar, etc.), lo que facilita su lectura y mantenimiento.
+* **Punteros:** Una parte clave del proyecto. Las funciones de búsqueda (`buscarPorID`, `buscarPorNombre`) devuelven un puntero al producto encontrado dentro del vector. Esto permite que la función `modificarInventario` trabaje directamente sobre el objeto original, alterando el inventario de forma eficiente.
+* **Algoritmos de Ordenamiento:** Se implementó el **Método de Burbuja** desde cero para ordenar el inventario, ya sea por precio o por cantidad disponible.
+* **Manejo de Excepciones (`try...catch`):** Se utiliza para gestionar errores de forma controlada. Por ejemplo, si un usuario busca un ID que no existe, el programa lanza (`throw`) una excepción que es capturada (`catch`) en el menú principal, evitando que el programa termine abruptamente.
 
-Arreglos (usando std::vector): Para almacenar la colección de productos en el inventario.
+## 📋 Funcionalidades
 
-Funciones: Para modularizar el código en bloques lógicos (inicializar, mostrar, buscar, ordenar, etc.).
+El programa presenta un menú interactivo con las siguientes opciones:
 
-Punteros: Utilizados en las funciones de búsqueda (buscarPorID, buscarPorNombre) para devolver la dirección de memoria del producto encontrado. Esto permite que la función modificarInventario afecte directamente al objeto original en el vector.
+1.  **Mostrar Inventario Completo:** Lista todos los productos registrados, su precio y cantidad.
+2.  **Buscar Producto por ID:** Pide un ID numérico y muestra los datos del producto si se encuentra.
+3.  **Buscar Producto por Nombre:** Pide un nombre y muestra los datos del producto correspondiente.
+4.  **Modificar Cantidad:** Pide el ID de un producto y permite al usuario actualizar la cantidad en stock.
+5.  **Ordenar por Precio:** Ordena y muestra la lista completa de productos del más barato al más caro.
+6.  **Ordenar por Cantidad:** Ordena y muestra la lista completa de productos del que tiene menor stock al que tiene mayor stock.
+7.  **Salir:** Termina la ejecución del programa.
 
-Ordenamiento: Implementación del algoritmo Método de Burbuja para ordenar el inventario por precio y por cantidad.
+## 🛠️ Cómo Compilar y Ejecutar
 
-Manejo de Excepciones (try...catch, throw): Para un manejo robusto de errores, especialmente cuando un producto buscado no se encuentra.
+Este proyecto está escrito en C++ estándar y puede ser compilado con `g++` (MinGW).
 
-Manejo de Entrada/Salida (iostream, iomanip): Para crear un menú interactivo y formatear la salida de datos en una tabla limpia.
+1.  **Clonar el repositorio (o descargar el archivo `inventario.cpp`):**
+    ```bash
+    git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/TU_USUARIO/TU_REPOSITORIO.git)
+    cd TU_REPOSITORIO
+    ```
 
-📋 Funcionalidades
+2.  **Compilar el programa:**
+    Abre una terminal (como GitBash) en la carpeta del proyecto y ejecuta el siguiente comando:
+    ```bash
+    g++ inventario.cpp -o inventario.exe
+    ```
+    *Esto creará un archivo ejecutable llamado `inventario.exe`.*
 
-Mostrar Inventario Completo: Lista todos los productos en el inventario con su ID, nombre, precio y cantidad.
+3.  **Ejecutar el programa:**
+    ```bash
+    ./inventario.exe
+    ```
 
-Buscar por ID: Busca un producto específico usando su ID.
+## 💻 Ejemplo de Interfaz
 
-Buscar por Nombre: Busca un producto específico usando su nombre exacto.
-
-Modificar Inventario: Permite cambiar la cantidad de un producto existente, buscándolo primero por su ID.
-
-Ordenar por Precio: Muestra el inventario ordenado del producto más barato al más caro.
-
-Ordenar por Cantidad: Muestra el inventario ordenado del producto con menor cantidad al con mayor cantidad.
-
-Validación de Entrada: El programa maneja entradas no numéricas en el menú.
+Al ejecutar el programa, se desplegará el siguiente menú:
